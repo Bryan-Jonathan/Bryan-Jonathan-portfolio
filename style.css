@@ -294,7 +294,12 @@ section{
     text-align: center;
 }
 
+.text-container-bullets{
+    text-align: left;
+}
+
 .section-container{
+    padding-top: 2rem;
     gap: 4rem;
     height: 50%;
 }
@@ -303,6 +308,27 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.bullet-icon-container{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.bullet-icon{
+    cursor: default;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.bullet-icon img{
+    margin-right: 10;
+}
+
+.check-icon{
+    cursor: default;
+    height: 1rem;
+    margin-right: 1rem;
 }
 
 /* Experience */
@@ -373,6 +399,22 @@ article .icon{
     border-color: rgb(163, 163, 163);
 }
 
+.container-shadow{
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.title-container{
+    padding-bottom: 1rem;
+}
+
+.title-border{
+    color: #fff;
+    background-color: #afa6a9;
+    /*border: 1px solid #5f5e5e;*/
+    border-radius: 1rem;
+    padding: 5px;
+}
+
 /* Contact */
 
 #contact{
@@ -424,3 +466,192 @@ footer p{
     text-align: center;
 }
 
+/* project1 */
+
+.bakery-title {
+    padding-top: 3rem;
+    font-size: larger;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.p_bakery{
+    font-size: large;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.title-project{
+    padding-top: 8rem;
+    font-size: larger;
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 35rem;
+    padding-bottom: 3rem;
+}
+
+.bakery-container{
+    padding: 2rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(139, 139, 139);
+    text-align: center;
+    width: 700px;
+    height: 390px;
+}
+
+.bakery-shadow{
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.p1-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1_bakery{
+    font-size: 1.1rem;
+    padding-top: 2rem;
+    margin-left: 29%;
+    margin-right: 29%;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.footer-container{
+    padding-top: 4rem;
+}
+
+.myslider{
+    position: relative;
+    display: flex;
+    /* to set image size*/
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+    display: none;
+    overflow: hidden;
+}
+
+.myslider img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slidercontainer{
+    position: relative;
+}
+
+.prev,.next{
+    position: absolute;
+    top: 35%;
+    transform: translateY(50%);
+    padding: 14px;
+    color: black;
+    font-size: 24px;
+    transition: 0.1s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.next{
+    right: -30px;
+}
+
+.prev{
+    left: -30px;
+}
+
+.dotsbox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 3px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.active, dot:hover{
+    border-color: #386f94;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: 0.8}
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fade{
+    from{opacity: 0.8}
+    to{
+        opacity: 1;
+    }
+}
+
+.txt{
+    font-size: 14px;
+    position: flex;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: -1%;
+    left: 50%;
+    text-align: center;
+    /*-webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;*/
+    z-index: 1;
+}
+
+@-webkit-keyframes posi {
+    from{left: 25%;}
+    to{left: 15%;}
+}
+@keyframes posi {
+    from{left: 25%;}
+    to{left: 15%;}
+}
+/*
+img{
+    transform: scale(1.5,1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin{
+    from{transform: scale(1,1);}
+    to{transform: scale(1.5 1.5);}
+}
+@keyframes zoomin{
+    from{transform: scale(1,1);}
+    to{transform: scale(1.5 1.5);}
+}*/

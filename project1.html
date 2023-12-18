@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bryan Jonathan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Experience</a></li>
+                <li><a href="index.html">Project</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="list-nav">
+        <div class="logo">Bryan Jonathan</div>
+        <div class="list-menu">
+            <div class="list-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="bakery-shop">
+        <h1 class="bakery-title">Bakery Shop</h1>
+        <p class="p_bakery">This project considered to be web based website that focused on creating Bakery shop website during the pandemic situation<br>which targets on fulfilling the customer satisfaction of being able to order cake delights through online method.</p>
+        <h1 class="title-project">Project Overview</h1>
+        <div class="bakery-container color-container bakery-shadow">
+            <div class="slidercontainer">
+                <div class="slider">
+                    <div class="myslider fade" style="display: block;">
+                        <div class="txt">
+                            <h1>Audience Classification of Bakery Website</h1>
+                        </div>
+                        <img id="slide-1" src="./assets/aud-class-bakery.jpg" alt="aud-class-bakery">
+                    </div>
+                    <div class="myslider fade" style="display: block;">
+                        <div class="txt">
+                            <h1>Entity Data Relationship of Bakery Website</h1>
+                        </div>
+                        <img id="slide-2" src="./assets/ERD-bakery.png" alt="ERD-bakery">
+                    </div>
+                    <div class="myslider fade" style="display: block;">
+                        <div class="txt">
+                            <h1>Wireframe of Bakery Website</h1>
+                        </div>
+                        <img id="slide-3" src="./assets/wireframe-bakery.png" alt="wireframe-bakery">
+                    </div>
+                    <div class="myslider fade" style="display: block;">
+                        <div class="txt">
+                            <h1>Navigational Structure of Bakery Website</h1>
+                        </div>
+                        <img id="slide-4" src="./assets/nav-struct-bakery.png" alt="nav-struct-bakery">
+                    </div>
+                    <div class="myslider fade" style="display: block;">
+                        <div class="txt">
+                            <h1>Bakery Website Result</h1>
+                        </div>
+                        <img id="slide-5" src="./assets/result-bakery.png" alt="result-bakery">
+                    </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                <div class="dotsbox">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="p1-container">
+            <p class="p1_bakery">Bakery Shop is one of my college project that was created during the pandemic situation where the requirement of people being able to do online orders need to exist within the situation. During the research gathering for the project we came out with result shown on design above  such as Audience Classification, Customer Entity Data Relationship, Website Wireframe, Customer Navigational Structure, and result of Bakery Website.</p>
+        </div>
+        <div class="p1-container">
+            <p class="p1_bakery">The project creation involved within Visual Studio Code software with combination of C#, HTML and CSS coding. Functionality from the website consist from bakery delights advertising, location of store, feedback from customer and login system for user and admin with their ability of either ordering and manage the website.</p>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <div class="nav-links-container footer-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Experience</a></li>
+                    <li><a href="index.html">Project</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>&#169; 2023. Made by Bryan Jonathan.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

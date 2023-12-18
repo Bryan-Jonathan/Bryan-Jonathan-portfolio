@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bryan Jonathan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Experience</a></li>
+                <li><a href="index.html">Project</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="list-nav">
+        <div class="logo">Bryan Jonathan</div>
+        <div class="list-menu">
+            <div class="list-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="bakery-shop">
+        <h1 class="bakery-title">Education Website</h1>
+        <p class="p_bakery">Education Website act as platform for student and teacher being able to access data and application where<br>during the pandemic situation affects the global situation for student not being able to conduct face to face studying.</p>
+        <h1 class="title-project">Project Overview</h1>
+        <div class="bakery-container color-container bakery-shadow">
+            <div class="slidercontainer">
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Microservice Architecture of Education Website</h1>
+                    </div>
+                    <img id="slide-1" src="./assets/Design-Educ.png" alt="Design-Educ">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Use Case Diagram of Education Website</h1>
+                    </div>
+                    <img id="slide-2" src="./assets/Usecase-Educ.png" alt="Usecase-Educ">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>System Flowchart Diagram of Education Website</h1>
+                    </div>
+                    <img id="slide-3" src="./assets/Flowchart-Educ.png" alt="Flowchart-Educ">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Cloud Architectural Diagram of Education Website</h1>
+                    </div>
+                    <img id="slide-4" src="./assets/CloudArch-Educ.png" alt="CloudArch-Educ">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Education Website Result</h1>
+                    </div>
+                    <img id="slide-5" src="./assets/project-2.png" alt="project-2">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>X-ray Analysis Performance of Education Website</h1>
+                    </div>
+                    <img id="slide-6" src="./assets/Xray-Educ.png" alt="Xray-Educ">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Beanstalk Analysis Performance of Education Website</h1>
+                    </div>
+                    <img id="slide-7" src="./assets/Beanstalk-Educ.png" alt="Beanstalk-Educ">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                <div class="dotsbox">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="p1-container">
+            <p class="p1_bakery">This website focuses to provide business platform for schools with low-budget spending needed. Through this approach we create interactive and dynamic web application that able to function onto cloud computing which uses most effective budget output where it provides various benefits. During the research we came out with result of Microservice Architecture, Use Case Diagram, System Flowchart, Cloud Architecture, performing analysis of website using X-Ray Service and Elastic Beanstalk.</p>
+        </div>
+        <div class="p1-container">
+            <p class="p1_bakery">Project creation involved wtihin Visual Studio Code software that uses combination of ASP.Net, AWS Cloud service such as RDS, S3, DynamoDb and X-Ray while within the application we utilized the use of PaaS tool, Elastic Beanstalk to conduct the deployment process.</p>
+        </div>
+        <div class="p1-container">
+            <p class="p1_bakery">Functionality of the system for user being able to conduct register and login onto the website that provide them different interface where for teacher they have ability of managing which teacher will teach the targeted subject, editing the data, create data for subject that student will choose, and seeing teacher data within the website even creating payment record to be shown for them which student have conduct subject payment.While for student they can request which subject access to be purchase where they will require the approval from the teacher after conducting the request.</p>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <div class="nav-links-container footer-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Experience</a></li>
+                    <li><a href="index.html">Project</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>&#169; 2023. Made by Bryan Jonathan.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

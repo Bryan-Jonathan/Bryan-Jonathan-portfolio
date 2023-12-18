@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bryan Jonathan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Experience</a></li>
+                <li><a href="index.html">Project</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="list-nav">
+        <div class="logo">Bryan Jonathan</div>
+        <div class="list-menu">
+            <div class="list-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="bakery-shop">
+        <h1 class="bakery-title">Android Secure File Management System</h1>
+        <p class="p_bakery">This project considered to be web based website that focused on creating Bakery shop website during the pandemic situation<br>which targets on fulfilling the customer satisfaction of being able to order cake delights through online method.</p>
+        <h1 class="title-project">Project Overview</h1>
+        <div class="bakery-container color-container bakery-shadow">
+            <div class="slidercontainer">
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>System Analysis Data</h1>
+                    </div>
+                    <img id="slide-1" src="./assets/System-Survey-Analys-Data.png" alt="System-Survey-Analys-Data">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Use Case Diagram</h1>
+                    </div>
+                    <img id="slide-2" src="./assets/Usecase-Android.png" alt="Usecase-Android">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Class Diagram</h1>
+                    </div>
+                    <img id="slide-3" src="./assets/ClassDiagFileSystem.png" alt="ClassDiagFileSystem">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Activity Diagram</h1>
+                    </div>
+                    <img id="slide-4" src="./assets/ActivityDiagFileSystem.png" alt="ActivityDiagFileSystem">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Sequence Diagram</h1>
+                    </div>
+                    <img id="slide-5" src="./assets/SequenceDiagramFileSystem.png" alt="SequenceDiagramFileSystem">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Interface Design</h1>
+                    </div>
+                    <img id="slide-6" src="./assets/InterfaceDesignFileSystem.png" alt="InterfaceDesignFileSystem">
+                </div>
+                <div class="myslider fade" style="display: block;">
+                    <div class="txt">
+                        <h1>Android Secure File System Result</h1>
+                    </div>
+                    <img id="slide-7" src="./assets/result-project-3.png" alt="result-project-3">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                <div class="dotsbox">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="p1-container">
+            <p class="p1_bakery">Android File System is project design personally with the goals of creating application that able to encrypt and decrypt data making the data more protected with the help of Base64 encryption or decryption. The other protection was implemented onto the login and register system where the password have protection of hash and salting that will automatically transform password from being readable into unreadable data and differentiating data that have same result.</p>
+        </div>
+        <div class="p1-container">
+            <p class="p1_bakery">Project creation involved within Android Studio software that uses help of PHP coding, XAMPP, Apache and MySQL to run overall application system and providing database system. Functionality of the application able to provide register and login system for user that give them ability of encrypt or decrypting data they desire to be protected from being accessed by attacker.</p>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <div class="nav-links-container footer-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Experience</a></li>
+                    <li><a href="index.html">Project</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>&#169; 2023. Made by Bryan Jonathan.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
