@@ -385,8 +385,16 @@ article .icon{
 
 .project-img{
     border-radius: 2rem;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-container{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
 }
 
 .project-title{
@@ -412,7 +420,7 @@ article .icon{
     background-color: #afa6a9;
     /*border: 1px solid #5f5e5e;*/
     border-radius: 1rem;
-    padding: 5px;
+    padding: 0 6px;
 }
 
 /* Contact */
@@ -533,7 +541,7 @@ footer p{
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    /*box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);*/
     border-radius: 0.5rem;
     display: none;
     overflow: hidden;

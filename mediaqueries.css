@@ -1,10 +1,28 @@
 @media screen and (max-width: 1400px) {
     #profile{
-        height: 83vh;
+        height: 79vh;
         margin-bottom: 6rem;
     }
-    .about-container{
+    .about-container, .bakery-container{
         flex-wrap: wrap;
+    }
+    .socials-logo{
+        padding-bottom: 0;
+    }
+    #about{
+        height: auto;
+    }
+
+    .p1_bakery{
+        padding-top: 2rem;
+        font-size: 18px;
+        text-align: justify;
+        margin-left: 18px;
+        margin-right: 18px;
+        line-height: 1.8rem;
+    }
+    .title-project{
+        padding-right: 0px;
     }
 }
 
@@ -16,7 +34,6 @@
     #list-nav{
         display: flex;
     }
-
     #experience, .experience-details-container{
         margin-top: 2rem;
     }
@@ -37,11 +54,17 @@
         height: 275px;
         margin: 0 auto 2rem;
     }
-    .about-container{
+    .about-container, .bakery-container{
         margin-top: 0;
     }
+    #contact{
+        height: 40vh;
+    }
+    #profile{
+        height: auto;
+        margin-bottom: 0;
+    }
 }
-
 
 @media screen and (max-width: 600px) {
     #contact, footer{
@@ -58,7 +81,10 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-container, .contact-info-upper-container, .btn-container{
+    .about-container, .bakery-container, .contact-info-upper-container, .btn-container{
+        flex-wrap: wrap;
+    }
+    .title-container{
         flex-wrap: wrap;
     }
     .contact-info-container{
@@ -91,5 +117,60 @@
     }
     .text-container{
         text-align: justify;
+    }
+    /* bakery/project 1 */
+    .bakery-title, .Educ-title{
+        padding-top: 1rem;
+        font-size: 44px;
+    }
+    .Android-title{
+        padding-top: 1rem;
+        font-size: 30px;
+    }
+    .p_bakery{
+        padding-top: 1.6rem;
+        font-size: 18px;
+        text-align: justify;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .title-project{
+        padding-top: 2rem;
+        padding-right: 18px;
+        padding-bottom: 18px;
+    }
+    .p1_bakery{
+        padding-top: 2rem;
+        font-size: 18px;
+        text-align: justify;
+        margin-left: 18px;
+        margin-right: 18px;
+        line-height: 1.8rem;
+    }
+    .bakery-container{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        position: 0;
+        width: 80%;
+        height: auto;
+
+        aspect-ratio: 0;
+        overflow-x: 0;
+        scroll-snap-type: 0;
+        scroll-behavior: 0;
+        overflow: 0;
+    }
+    .txt{
+        font-size: 6px;
+        position: flex;
+        color: black;
+        letter-spacing: 2px;
+        line-height: 15px;
+        top: -1%;
+        left: 50%;
+        text-align: center;
+        z-index: 1;
     }
 }
